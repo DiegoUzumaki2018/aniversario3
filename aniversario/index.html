@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Círculo Colorido</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+             text-align: center;
+        }
+        .circulo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+             margin-left: 300px;
+            background: conic-gradient(
+                red,
+                orange,
+                yellow,
+                green,
+                cyan,
+                blue,
+                purple,
+                red
+            );
+
+            animation: girar 2s linear infinite;
+
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+           
+        }
+  
+body {
+    margin: 0;
+    overflow: hidden;
+    background: rgb(220, 217, 217);
+
+        margin: 0;
+            min-height: 100vh;
+
+            background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff00ff,
+                #0000ff,
+                #00ffff,
+                #00ff00,
+                #ffff00
+            );
+
+            background-size: 400% 400%;
+
+            animation: fundo 10s ease infinite;
+        }
+
+        @keyframes fundo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+}
+
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+
+    background: linear-gradient(
+         90deg,
+                red,
+                orange,
+                yellow,
+                green,
+                blue,
+                indigo,
+                violet,
+                red
+                  
+    );
+    background-size: 400% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 60px;
+    margin-bottom: 40px;
+    animation: arcoiris 5s linear infinite , surgir 3s ease-in-out;
+  
+
+             
+}
+    @keyframes arcoiris {
+        0%{
+            background-position: 0% 50%;
+        }
+        100%{
+            background-position:400% 50%;
+        }
+    }
+     @keyframes surgir{
+             from{
+                opacity: 0;
+                transform: translateY(-50px);
+             }
+             to{
+                opacity: 1;
+                transform: translateY(0);
+             }
+            }
+
+p{
+    margin-left: 290px;
+}
+.ok{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.balão{
+    width: 800px;
+        border:12px solid;
+        border-image: linear-gradient(
+              90deg,
+        red,
+        blue,
+        purple,
+        green,
+        red
+        )1;
+
+}
+a{
+    font-size: 33px;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+  <header class="ok">
+    <section>
+    <div>
+        <img class="balão" src="imagens/aniversario1.gif" alt="">
+    </div>
+  </section>
+
+  <section>
+   <div>
+    <div class="circulo"></div>
+    <p>muitos anos de vida muitas felicidades</p>
+  </div>
+
+   
+
+     <div class="container"> 
+    <h1>FELIZ ANIVERSARIO</h1>
+   <br>
+   <a href="outra coisa.html">Seu Presente 1°</a>
+   <br>
+   <a href="video.html">Seu Presente 2°</a>
+   <br>
+   <a href="qualquer.html">Seu Presente 3°</a>
+     </div>
+   
+    </section>
+   </header>
+   </body>
+</html>

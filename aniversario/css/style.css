@@ -1,0 +1,12 @@
+.circulo{
+background:conic-gradient (
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    purple,
+    red
+)
+}
